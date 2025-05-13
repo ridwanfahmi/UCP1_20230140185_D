@@ -1,0 +1,44 @@
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontak - EnglishPiece</title>
+  <link rel="stylesheet" href="stylecontact.css">
+  <script src="promo.js" defer></script>
+</head>
+<body>
+  <!-- Overlay dan Popup Promosi -->
+  <div id="overlay"></div>
+  <div id="promoPopup">
+    <h3>🎉 Promo Spesial!</h3>
+    <p>Daftar sekarang dan dapatkan diskon 25% untuk kelas bulan ini!</p>
+    <button onclick="closePopup()">Tutup</button>
+  </div>
+  <header>
+    <h1>EnglishPiece</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="about.html">Tentang</a></li>
+        <li><a href="features.html">Fitur</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Form Pendaftaran</h2>
+      <form onsubmit="return showPopup()">
+        <label>Nama: <input type="text" required></label><br>
+        <label>Email: <input type="email" required></label><br>
+        <label for="minat">Minat Belajar</label>
+        <select id="minat" name="minat">
+            <option value="speaking">Speaking</option>
+            <option value="grammar">Grammar</option>
+            <option value="listening">Listening</option>
+          </select>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

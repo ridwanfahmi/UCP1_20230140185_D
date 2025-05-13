@@ -1,0 +1,144 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #007acc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+main {
+  padding: 30px;
+}
+
+
+form {
+  background-color: #ffffff;
+  max-width: 400px;
+  margin: auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+
+}
+
+form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005c99;
+}
+
+/* Responsif */
+@media (max-width: 480px) {
+  form {
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+#promoPopup {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  background-color: white;
+  border: 2px solid #007acc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 999;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+#promoPopup h3 {
+  color: #007acc;
+}
+
+#promoPopup button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#promoPopup button:hover {
+  background-color: #005b99;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 998;
+}
